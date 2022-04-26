@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         val charactersFragment = CharactersFragment()
         val episodesFragment = EpisodesFragment()
@@ -25,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.fragment_container, CharactersFragment())
             commit()
         }
+        setContentView(binding.root)
 
         binding.navView.setOnItemSelectedListener {
             when (it.itemId) {

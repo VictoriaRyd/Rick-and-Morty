@@ -3,4 +3,6 @@
     <string name="location">Location</string>
     <string name="episodes">Episodes</string>
     <string name="characters">Characters</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
 </resources>
