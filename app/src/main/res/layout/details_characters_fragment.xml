@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swRefrDetailCharacter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imCharacter"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progBarCharacter"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/nameCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toEndOf="@+id/imCharacter"
+            app:layout_constraintTop_toTopOf="@+id/imCharacter" />
+
+        <TextView
+            android:id="@+id/genderCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/gender"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/nameCharacter"
+            app:layout_constraintStart_toStartOf="@+id/nameCharacter"
+            app:layout_constraintTop_toBottomOf="@+id/nameCharacter" />
+
+        <TextView
+            android:id="@+id/statusCharacter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imCharacter"
+            app:layout_constraintEnd_toEndOf="@+id/genderCharacter"
+            app:layout_constraintStart_toStartOf="@+id/genderCharacter"
+            app:layout_constraintTop_toBottomOf="@+id/genderCharacter" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imCharacter">
+
+            <TextView
+                android:id="@+id/originCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/origin"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/locationCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/speciesCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/species"
+                android:textSize="24sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/episodes_item" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

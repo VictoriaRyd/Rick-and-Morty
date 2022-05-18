@@ -6,10 +6,24 @@
         <entry key="app/src/main/res/drawable/corner.xml" value="0.122" />
         <entry key="app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/characters_item.xml" value="0.6299214680989584" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/characters_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/characters_item.xml" value="0.2451202392578125" />
+        <entry key="app/src/main/res/layout/details_characters_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/details_episodes_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/details_location_fragment.xml" value="0.1633176571184267" />
         <entry key="app/src/main/res/layout/episodes_item.xml" value="0.2816265869140625" />
-        <entry key="app/src/main/res/layout/fragment_characters.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/filter_characters_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/filter_episodes_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/filter_location_fragment.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/fragment_characters.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_details_characters.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_details_episodes.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_details_location.xml" value="0.1633176571184267" />
         <entry key="app/src/main/res/layout/fragment_episodes.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_filter_characters.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/fragment_filter_episodes.xml" value="0.1633176571184267" />
+        <entry key="app/src/main/res/layout/fragment_filter_location.xml" value="0.1633176571184267" />
         <entry key="app/src/main/res/layout/fragment_location.xml" value="0.1633176571184267" />
         <entry key="app/src/main/res/layout/location_item.xml" value="0.1633176571184267" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1633176571184267" />

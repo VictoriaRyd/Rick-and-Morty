@@ -1,12 +1,13 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.rickandmorty.R
 import com.example.rickandmorty.databinding.ActivityMainBinding
-import com.example.rickandmorty.characters.CharactersFragment
-import com.example.rickandmorty.episodes.EpisodesFragment
-import com.example.rickandmorty.location.LocationFragment
+import com.example.rickandmorty.ui.character.CharactersFragment
+import com.example.rickandmorty.ui.episodes.EpisodesFragment
+import com.example.rickandmorty.ui.location.LocationFragment
 
 class MainActivity : AppCompatActivity() {
 
