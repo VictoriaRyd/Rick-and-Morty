@@ -12,6 +12,17 @@
     <string name="gender">Gender</string>
     <string name="origin">Origin</string>
     <string name="dimension">Dimension</string>
+    <string name="empty">Filter is empty</string>
+    <string name="same_filter">Same filter</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_and_exit">Clear filter and exit</string>
+    <string name="isNotEnoughEpisodesFound">Connect to network to receive episodes</string>
+    <string name="isNoDataFound">\"No locations found, check filter or/and connect to network for loading more data \"</string>
+    <string name="isNotEnoughCharactersFound">Connect to network to receive characters</string>
+    <string name="isNoDataFoundEpisode">Connect to network to receive data</string>
+    <string name="isNotEnoughCharactersFound">Connect to network to receive characters</string>
+    <string name="isNoData">Connect to network to receive data</string>
+    <string name="unknown">unknown</string>
 
     <string-array name="status">
         <item>Any</item>

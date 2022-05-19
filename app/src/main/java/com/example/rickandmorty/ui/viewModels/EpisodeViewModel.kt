@@ -3,7 +3,7 @@ package com.example.rickandmorty.ui.viewModels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.rickandmorty.Repository
+import com.example.rickandmorty.ui.Repository
 import com.example.rickandmorty.ui.character.Character
 import com.example.rickandmorty.ui.episodes.Episode
 import kotlinx.coroutines.Dispatchers

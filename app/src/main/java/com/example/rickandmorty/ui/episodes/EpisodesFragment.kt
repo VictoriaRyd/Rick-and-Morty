@@ -109,7 +109,7 @@ class EpisodesFragment: Fragment(R.layout.fragment_episodes) {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.toolbar_search -> {
-                Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, getString(R.string.search), Toast.LENGTH_SHORT).show()
                 true
             }
             R.id.toolbar_filter -> {

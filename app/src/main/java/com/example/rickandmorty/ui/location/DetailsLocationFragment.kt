@@ -79,13 +79,13 @@ class DetailsLocationFragment(private val locationId: Int): Fragment(R.layout.de
         viewModelLocation.isNotEnoughCharactersFound.observe(viewLifecycleOwner) {
             it.let {
                 if (it) Toast.makeText(requireContext(),
-                    "Connect to network to receive characters", Toast.LENGTH_SHORT).show()
+                    getString(R.string.isNotEnoughCharactersFound), Toast.LENGTH_SHORT).show()
             }
         }
         viewModelLocation.isNoDataFound.observe(viewLifecycleOwner) {
             it.let{
                 if (it) Toast.makeText(requireContext(),
-                    "Connect to network to receive data", Toast.LENGTH_SHORT).show()
+                    getString(R.string.isNoData), Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -94,9 +94,9 @@ class DetailsLocationFragment(private val locationId: Int): Fragment(R.layout.de
         with(binding) {
             name.text = location?.name
             type.text =
-                if (location?.type?.isEmpty() == true) "unknown" else location?.type
+                if (location?.type?.isEmpty() == true) getString(R.string.unknown) else location?.type
             dimension.text =
-                if (location?.dimension?.isEmpty() == true) "unknown" else location?.dimension
+                if (location?.dimension?.isEmpty() == true) getString(R.string.unknown) else location?.dimension
         }
         if (listCharacters.isNullOrEmpty()) {
             getCharactersList(location)

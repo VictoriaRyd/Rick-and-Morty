@@ -1,6 +1,5 @@
 package com.example.rickandmorty.db
 
-import com.example.rickandmorty.Repository
 import com.example.rickandmorty.api.*
 import com.example.rickandmorty.db.dao.CharacterDao
 import com.example.rickandmorty.db.dao.EpisodesDao
@@ -8,6 +7,7 @@ import com.example.rickandmorty.db.dao.LocationDao
 import com.example.rickandmorty.db.mappers.CharacterMapper
 import com.example.rickandmorty.db.mappers.EpisodeMapper
 import com.example.rickandmorty.db.mappers.LocationMapper
+import com.example.rickandmorty.ui.Repository
 import com.example.rickandmorty.ui.character.Character
 import com.example.rickandmorty.ui.character.CharactersFilter
 import com.example.rickandmorty.ui.episodes.Episode

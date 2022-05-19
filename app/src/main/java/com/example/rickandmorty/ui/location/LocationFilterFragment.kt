@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import com.example.rickandmorty.R
 import com.example.rickandmorty.databinding.FilterLocationFragmentBinding
 
 class LocationFilterFragment: DialogFragment() {
@@ -38,15 +39,17 @@ class LocationFilterFragment: DialogFragment() {
                 } else ""
                 val filter = LocationsFilter(name, type, dimension)
                 if (isEmpty(filter)) {
-                    Toast.makeText(requireContext(), "Filter is empty", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(),
+                        getString(R.string.empty), Toast.LENGTH_SHORT).show()
                 }
                 if (isSame(args, filter)) {
-                    Toast.makeText(requireContext(), "Same filter", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(),
+                        getString(R.string.same_filter), Toast.LENGTH_SHORT).show()
                 }
                 (parentFragment as LocationFragment).getLocationFilter(filter)
             }
-            .setNegativeButton("Cancel", null)
-            .setNeutralButton("Clear filter and exit") {_, _ ->
+            .setNegativeButton(getString(R.string.cancel), null)
+            .setNeutralButton(getString(R.string.clear_and_exit)) {_, _ ->
                 (parentFragment as LocationFragment).getLocationFilter(
                     LocationsFilter("", "", ""))
             }

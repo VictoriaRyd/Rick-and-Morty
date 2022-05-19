@@ -79,15 +79,14 @@ class DetailsCharactersFragment(private val characterId: Int) : Fragment(R.layou
         viewModelCharacter.isNotEnoughEpisodesFound.observe(viewLifecycleOwner) {
             it.let {
                 if (it) Toast.makeText(requireContext(),
-                    "Connect to network to receive episodes",
+                    getString(R.string.isNotEnoughEpisodesFound),
                     Toast.LENGTH_SHORT).show()
             }
         }
         viewModelCharacter.isNoDataFound.observe(viewLifecycleOwner) {
             it.let{
                 if (it) Toast.makeText(requireContext(),
-                    "No locations found, check filter or/and connect to " +
-                            "network for loading more data",
+                    getString(R.string.isNoDataFound),
                     Toast.LENGTH_SHORT).show()
             }
         }

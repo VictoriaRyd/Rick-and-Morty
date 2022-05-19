@@ -1,6 +1,6 @@
 package com.example.rickandmorty.di
 
-import com.example.rickandmorty.RetrofitClient
+import com.example.rickandmorty.api.RetrofitClient
 import com.example.rickandmorty.ui.MainActivity
 import com.example.rickandmorty.ui.character.CharactersFragment
 import com.example.rickandmorty.ui.character.DetailsCharactersFragment

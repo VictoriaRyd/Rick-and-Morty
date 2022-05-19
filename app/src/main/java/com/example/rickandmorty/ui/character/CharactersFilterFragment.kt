@@ -43,16 +43,16 @@ class CharactersFilterFragment: DialogFragment() {
                 val filter = CharactersFilter(name, status, species, type, gender)
                 if (isEmpty(filter)) {
                     Toast.makeText(requireContext(),
-                        "Filter is empty", Toast.LENGTH_SHORT).show()
+                        getString(R.string.empty), Toast.LENGTH_SHORT).show()
                 }
                 if (isSame(args, filter)) {
                     Toast.makeText(requireContext(),
-                        "Same filter", Toast.LENGTH_SHORT).show()
+                        getString(R.string.same_filter), Toast.LENGTH_SHORT).show()
                 }
                 (parentFragment as CharactersFragment).getCharacterFilter(filter)
             }
-            .setNegativeButton("Cancel", null)
-            .setNeutralButton("Clear filter and exit") {_, _ ->
+            .setNegativeButton(getString(R.string.cancel), null)
+            .setNeutralButton(getString(R.string.clear_and_exit)) { _, _ ->
                 (parentFragment as CharactersFragment).
                 getCharacterFilter(CharactersFilter
                     ("", null, "", "", null))

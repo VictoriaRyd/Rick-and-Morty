@@ -80,13 +80,13 @@ class DetailsEpisodesFragment(private val episodeId: Int): Fragment(R.layout.det
         viewModelEpisode.isNotEnoughCharactersFound.observe(viewLifecycleOwner) {
             it.let {
                 if (it) Toast.makeText(requireContext(),
-                    "Connect to network to receive characters", Toast.LENGTH_SHORT).show()
+                    getString(R.string.isNotEnoughCharactersFound), Toast.LENGTH_SHORT).show()
             }
         }
         viewModelEpisode.isNoDataFound.observe(viewLifecycleOwner) {
             it.let{
                 if (it) Toast.makeText(requireContext(),
-                    "Connect to network to receive data", Toast.LENGTH_SHORT).show()
+                    getString(R.string.isNoDataFoundEpisode), Toast.LENGTH_SHORT).show()
             }
         }
     }
