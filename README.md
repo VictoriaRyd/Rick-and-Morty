@@ -25,11 +25,12 @@ Clicking on an item from the list opens a screen with the selected character's d
 
 #### Screenshots:
 
+<p float="left">
 	<img src="./screenshots/splash_screen_one.jpeg" alt="Application opening" width="250">
 	<img src="./screenshots/splash_screen_two.jpeg" alt="Splash screen" width="250">
 	<img src="./screenshots/list_of_heroes.jpeg" alt="List of heroes" width="250">
 	<img src="./screenshots/hero_filter.jpeg" alt="Heroes filter" width="250">
-    <img src="./screenshots/loading_hero_details.jpeg" alt="Loading hero details" width="250">
+   	<img src="./screenshots/loading_hero_details.jpeg" alt="Loading hero details" width="250">
 	<img src="./screenshots/hero_detail.jpeg" alt="Hero details" width="250">
 </p>
 
